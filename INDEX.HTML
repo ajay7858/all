@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Page Opener</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1a1a1a, #2c3e50); /* Gradient background */
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+            flex-direction: column;
+        }
+
+        /* Heading Styling */
+        h1 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #fff;
+            text-align: center;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Subtle glow */
+        }
+
+        /* Button Container Styling */
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 columns */
+            gap: 20px;
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+            padding: 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px); /* Frosted glass effect */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        /* Main Button Styling */
+        button {
+            width: 100%;
+            padding: 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            color: #fff;
+            background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient button */
+            transition: transform 0.2s, box-shadow 0.3s;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        button:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Heading for the Game List -->
+    <h1>Custom Page Opener</h1>
+
+    <!-- Main Buttons -->
+    <div class="button-container">
+        <button onclick="openFile('1.html')">1. Open Page 1</button>
+        <button onclick="openFile('2.html')">2. Open Page 2</button>
+        <button onclick="openFile('3.html')">3. Open Page 3</button>
+        <button onclick="openFile('4.html')">4. Open Page 4</button>
+        <button onclick="openFile('5.html')">5. Open Page 5</button>
+        <button onclick="openFile('6.html')">6. Open Page 6</button>
+        <button onclick="openFile('7.html')">7. Open Page 7</button>
+        <button onclick="openFile('8.html')">8. Open Page 8</button>
+        <button onclick="openFile('9.html')">9. Open Page 9</button>
+        <button onclick="openFile('10.html')">10. Open Page 10</button>
+    </div>
+
+    <script>
+        // Function to open a specific file
+        function openFile(filePath) {
+            // Open the file in a new tab
+            window.open(filePath, "_blank");
+        }
+    </script>
+</body>
+
+</html>

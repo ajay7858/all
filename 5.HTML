@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Page</title>
+    <style>
+        /* Simple Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background: #1a1a1a; /* Dark background */
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            height: 100vh;
+        }
+      
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            color: #fff;
+            background: #ff416c; /* Red background */
+            transition: background 0.3s;
+        }
+        .back-button:hover {
+            background: #e63946; /* Darker red on hover */
+        }
+
+
+
+        
+    </style>
+</head>
+<body>
+    <!-- Back Button at Top-Left Corner -->
+    <button class="back-button" onclick="goBackToHome()">Back to Home</button>
+    
+   
+
+
+    <script>
+        // Function to go back to the home page
+        function goBackToHome() {
+            window.close(); // Close the current custom page
+            window.opener.focus(); // Focus on the home page
+        }
+    </script>
+</body>
+</html>
